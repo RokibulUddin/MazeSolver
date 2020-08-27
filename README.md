@@ -6,6 +6,10 @@ This is a simple maze creator/solver and solution visualizer using A* algorithm
 ```bash
 python[.exe] MazeSolver.py [maze_input_<num>.png]
 ```
+if required, install required modules with:
+```bash
+pip install -r requirements.txt
+```
 
 1) Execute it to generate a random maze
 2) Click any point in the maze to create a **start point**
