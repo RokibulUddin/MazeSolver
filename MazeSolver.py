@@ -426,19 +426,20 @@ def fill_full_image(img):
     return (grid, img.size[0])
 
 def main(win, width):
-    ROWS = 100
+    ROWS = 50
 
     grid = None
     argc = len(sys.argv) - 1
     im = None
-    grid = make_grid(ROWS, width)
     if argc >= 1:
         # load from image
         im = Image.open(sys.argv[1]).convert("L")
         if im.size[0] == 100 and im.size[1] == 100:
             ROWS = im.size[0]
+            grid = make_grid(ROWS, width)
         else:
             im.thumbnail((ROWS,ROWS))
+            grid = make_grid(ROWS, width)
         fill_grid_from_img(im, grid, ROWS)
     else:
         # generate maze
