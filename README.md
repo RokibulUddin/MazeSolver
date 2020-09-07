@@ -1,6 +1,7 @@
 # A* MazeSolver
 
 This is a simple maze creator/solver and solution visualizer using A* algorithm
+![alt text](https://raw.githubusercontent.com/RokibulUddin/MazeSolver/master/example.png)
 
 ## Usage:
 ```bash
